@@ -6,6 +6,12 @@ class PathFormatter < Formula
   license "MIT"
   head "https://github.com/patrickpichler/path-formatter.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/patrickpichler/homebrew-tap/releases/download/path-formatter-0.0.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, ventura: "fbf613f3eafe15760703da19ef62c626186d96ee63f9284e33805595d1de0b09"
+  end
+
   depends_on "go" => :build
 
   def install
