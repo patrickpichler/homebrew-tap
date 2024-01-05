@@ -12,7 +12,6 @@ class Wgo < Formula
     system "go", "build", *std_go_args(ldflags: "-s -w")
   end
 
-
   test do
     system "true"
   end
